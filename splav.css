@@ -1,0 +1,19 @@
+.logo{
+    border-radius: 13px;
+padding-left: 20px;
+padding: 10px;
+justify-content: center;
+display: flex;padding-right: 800px;
+font-size: 25px;
+align-items: center;
+color: lightgray;
+font-family: "OpenSans", sans-serif;
+font-weight: bold;}
+.logo1{justify-content: center;}
+header{
+    background-color: rgb(82,85,84);
+    height: 100px;
+    
+}
+*{margin: 0;
+padding: 0;}
