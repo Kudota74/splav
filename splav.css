@@ -1,15 +1,28 @@
 .logo{
     border-radius: 13px;
-padding-left: 20px;
+padding-left: 60px;
 padding: 10px;
-justify-content: center;
-display: flex;padding-right: 800px;
+margin-left: 10px;
+display: flex;
+padding-right: 800px;
 font-size: 25px;
 align-items: center;
 color: lightgray;
 font-family: "OpenSans", sans-serif;
-font-weight: bold;}
-.logo1{justify-content: center;}
+font-weight: bold;
+}
+.spick{
+  position: absolute;
+  gap: 50px;
+}
+.contact{
+display: inline;
+color: black;
+font-size: 15px;
+flex-direction: row-reverse;
+top: 60px;
+right: 60px;
+}
 header{
     background-color: rgb(82,85,84);
     height: 100px;
@@ -17,3 +30,106 @@ header{
 }
 *{margin: 0;
 padding: 0;}
+body{font-family:"OpenSans", sans-serif ;}
+
+.aboutUs {
+    background-color: #758488;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    border: 2px solid rgba(57, 59, 59, 0.801);
+  }
+  
+.ButtonsHead{
+    display: flex;
+}
+  .info {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое */
+  .links {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .links a {
+    color: rgb(80, 80, 80);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .links a:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .info:hover .links{display: block;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .info:hover .aboutUs {background-color: #d68b56;}
+
+  .Splavs{background-color: #758488;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+display: flex;
+border: 2px solid rgba(57, 59, 59, 0.801);}
+
+.links2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+.links2 a {
+    color: rgb(80, 80, 80);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;}
+
+    .links2 a:hover {background-color: #ddd;}
+
+    .Splavi{
+        position: relative;
+    display: inline-block;
+    }
+
+    .Splavi:hover .links2{display: block;}
+
+    .Splavi:hover .Splavs {background-color: #d68b56;}
+
+    .shedule{
+      position: relative;
+    display: inline-block;
+    }
+    .raspisanie{
+      background-color: #758488;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      display: flex;
+      border: 2px solid rgba(57, 59, 59, 0.801);
+    }
+    .shedule:hover .raspisanie{
+      background-color: #d68b56;
+    }
+
+    .review{
+      display: flex;
+      justify-content: end;
+    }
