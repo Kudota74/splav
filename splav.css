@@ -11,9 +11,19 @@ color: lightgray;
 font-family: "OpenSans", sans-serif;
 font-weight: bold;
 }
+.pic{
+padding-top: 500px;
+}
+.ai{}
+.videosec{
+  display: flex;
+}
 .spick{
   position: absolute;
-  gap: 50px;
+  display:flex; 
+  position: absolute; 
+  gap: 50px; 
+  flex-direction: row-revers
 }
 .contact{
 display: inline;
@@ -22,6 +32,8 @@ font-size: 15px;
 flex-direction: row-reverse;
 top: 60px;
 right: 60px;
+  padding-left: 120% ;  
+  justify-content: end; 
 }
 header{
     background-color: rgb(82,85,84);
@@ -133,3 +145,13 @@ border: 2px solid rgba(57, 59, 59, 0.801);}
       display: flex;
       justify-content: end;
     }
+
+    .ai{
+      height: 10  00px;
+      width: 100%;
+      background-color: #d68b56;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+  
