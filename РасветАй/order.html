@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./splav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body style="width: 1024px;">
+  <header class="head">
+    
+    <div class="logo">
+        <img class="logo1" src="./_BA1cYbNRCQ.jpg" alt="" height="80px" width="80px" style="border-radius: 55px">
+    <font style="padding-left: 15px;"> РасcветАй </font>
+     </div>
+   
+    <div class="ButtonsHead">
+    <div class="info">
+        <button class="aboutUs"><a href="./splav.html" style="text-decoration: none; color: white;">Главная </a></button>
+      </div>
+        <div class="Splavi">
+      <button class="Splavs"><a href="./price.html" style="text-decoration: none; color: white;">Cплавы</a></button>
+        </div>
+        <div class="Splavi">
+          <button class="Splavs">Забронировать сплав</button>
+        </div>
+        <div class="shedule">
+          <button class="raspisanie">Походы/Экскурсии</button>
+
+        </div >
+     
+      </div>
+      <div class="contact">
+        <strong>
+        <ul class="spick" >
+        <li>    
+          <a href="https://vk.com/rassvetai74" style="text-decoration: none; color: black;" target="_blank">   
+            <img src="./icons8-vk-50.png" alt="" height="45px" width="45px" style="padding-top: 25px;">
+           
+       <p="vk"></p>
+      </a> 
+      </li>
+      <li>
+        <ul class="phone">
+        <img src="./icons8-телефон-30.png" alt="" >
+        +7 (982) 345-35-72
+        
+      </ul>
+       </li>
+        </ul>
+      </strong>
+    </div>
+  </header>
+
+    <div id="order"><h1>Бронирование</h1>
+      <form action="" id="form">
+        <label for="name">Назовите пожалуйста ваше имя и фамилию</label>
+   <input type="text" id="name" placeholder="Введите сообщение" class="vvod">
+   <br>
+   <br>
+ 
+
+  <label for="phone">Укажите ваш номер телефона для связи</label>
+   <input type="tel" id="phone" class="vvod">
+   <br>
+   <br>
+  
+
+  <label for="email"> Укажите ваш адрес электронной почты</label>
+   <input type="email" name="" id="email" class="vvod">
+   <br>
+   <br>
+ 
+ <label for="members">Укажите количество человек, планирующих посетить наши сплавы</label>
+ <input type="number" id="members" min="1" class="vvod">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+   <br>
+   <br>
+  <label for="days">Напишите количество дней на планируете сплав</label>
+   <input type="number" id="days" min="1" max="3" class="vvod">
+  <br>
+  <br>
+
+  <label for="date">Напишите дату в которую вы хотите к нам приехать</label>
+   <input type="date" id="date" class="vvod">
+   <br>
+   <br>
+  
+
+  <label for="comment">Оставьте дополнительные пожелания к сплаву</label>
+   <textarea name=""  id="comment" class="vvod"></textarea>
+   <br>
+   <br>
+ 
+  </form>
+  <button id="send" type="submit">Отправить заявку</button>
+  <p id="error">Заполните форму заявки до конца!</p>
+    </div>
+
+    <script src="./splav.js"></script>
+</body>
+</html>
