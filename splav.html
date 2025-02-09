@@ -8,45 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body style="width: 1024px;">
+<body  class="body" style="width: 1024px; background-color: rgb(155, 156, 157);">
+  <div class="head">
   <header class="head">
-    
+
     <div class="logo">
         <img class="logo1" src="./_BA1cYbNRCQ.jpg" alt="" height="80px" width="80px" style="border-radius: 55px">
-    <font style="padding-left: 15px;"> РасветАй </font>
+    <font style="padding-left: 15px;"> РасcветАй </font>
+    <div> 
+      <button id="burger" >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        </button>
+</div>
      </div>
+
+    
    
-    <div class="ButtonsHead">
+    <div class="ButtonsHead" >
+
     <div class="info">
-        <button class="aboutUs">О нас </button>
-        <div class="links">
-          <a href="#">Ссылка 1</a>
-          <a href="#">Ссылка 2</a>
-          <a href="#">Ссылка 3</a>
-        </div>
+        <button class="aboutUs"><a href="./splav.html" style="text-decoration: none; color: white;">Главная </a> </button>
       </div>
         <div class="Splavi">
-      <button class="Splavs">Программы сплавов</button>
-      <div class="links2">
-        <a href="#">Однодневный сплав</a>
-        <a href="#">Двухдневный сплав</a>
-        <a href="">Трехдневный сплав</a>
-      </div>
+      <button class="Splavs"><a href="./price.html" style="text-decoration: none; color: white;">Cплавы</a></button>
+        </div>
+        <div class="Splavi">
+          <button class="Splavs" ><a href="./order.html" style="text-decoration: none; color: white;">Забронировать сплавы</a> </button>
         </div>
         <div class="shedule">
-          <button class="raspisanie">Расписание сплавов</button>
+          <button class="raspisanie">Походы/Экскурсии</button>
 
-        </div>
+        </div >
+     
       </div>
       <div class="contact">
         <strong>
         <ul class="spick" >
         <li>    
-          <a href="https://vk.com/rassvetai74" style="text-decoration: none; color: black;">   
-            <img src="./icons8-vk-50.png" alt="" height="45px" width="45px" style="padding-top: 15px;">
+          <a href="https://vk.com/rassvetai74" style="text-decoration: none; color: black;" target="_blank">   
+            <img src="./icons8-vk-50.png" alt="" height="45px" width="45px" style="padding-top: 25px;">
            
-       <p="vk">Забронировать сплав</p>
+       <p="vk"></p>
       </a> 
       </li>
       <li>
@@ -59,18 +65,25 @@
         </ul>
       </strong>
     </div>
-  </header>  
+  </header> 
+</div> 
+
+<div class="videoBox">
   <section class="videosec">
-  <video playsinline autoplay loop muted class="video" height="800px" width=""><source src="./VideoDrone.mp4" type="video/mp4"></video>
+  <video playsinline autoplay loop muted class="video" height="800px" width=""><source src="./VideoDrone.mp4" type="video/mp4" ></video>
+  <video playsinline autoplay loop muted class="videoS" height="800px" width=""><source src="./Видео без названия — сделано в Clipchamp.mp4" type="video/mp4" ></video>
+
   <div class="pic1ai">
     <div class="picture">
-    <img src="zG7mjCl5vY4.jpg" alt="" height="240px" width="420px" style="border-radius: 13px;">
- 
-    </div>
+    <img src="zG7mjCl5vY4.jpg" alt="" height="240px" width="420px" style="border-radius: 13px;" id="bububu">
+  </div>
+
+    
     <div class="ai">
       Река Ай, словно изумрудная лента, извивалась между высокими берегами, покрытыми густым лесом. Ее воды, чистые и 
   </div>
 </div>
+
   <p class="text">
     <strong>
       <font class="text1">
@@ -89,11 +102,15 @@
 </strong>
   </p>
   </section>
+</div>
+
   <strong>
-  <div class="headline">Фотографии наших туристов!</div>
+  <div class="headline">
+    <p class="photo">Фотографии наших туристов!</p>
+  </div>
 </strong>
 <main class="galery" id="galery">
-<div class="pic first"><img src="./сплавы/7oSvpqAQWzc.jpg" alt="" class="ph"></div>
+<div class="pic first"><img src="./сплавы/7oSvpqAQWzc.jpg" data-src="./сплавы/7oSvpqAQWzc.jpg" alt="" class="ph"></div>
 <div class="pic second"><img src="./сплавы/8q4FAUy2CAc.jpg" alt="" class="ph"></div>
 <div class="pic third"><img src="./сплавы/Au0O4cXo_5s.jpg" alt="" class="ph"></div>
 <div class="pic fourth"><img src="./сплавы/M8Av-vf6S9k.jpg" alt="" class="ph"></div>
@@ -106,8 +123,16 @@
 <div class="pic eleven"><img src="./сплавы/OjMpOiF0VeA (1).jpg" alt="" class="ph"></div>
 <div class="pic twelve"><img src="./сплавы/XBdqEMMol3w.jpg" alt="" class="ph"></div>
 <div class="pic thirteen"><img src="./сплавы/YKIQ7HtYSi8.jpg" alt="" class="ph"></div>
-<div class="pic fourteen"><img src="./сплавы/Z1zdXzNSLcI.jpg" alt="" class="ph"></div>
+<div class="pic fourteen"><img src="./сплавы/34uflflN_vI.jpg" alt="" class="ph"></div>
 </main>
+
+<script src="./splav.js">
+  
+  // function rostics () {
+  //   const ButtonsHead = document.querySelector('.ButtonsHead').
+  //   ButtonsHead.classList.toggle("active");
+  // }
+</script>
   
 </body>
-</html>
+</html> 
