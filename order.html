@@ -3,102 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Бронирование</title>
     <link rel="stylesheet" href="./splav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        #order {
+            width: 100%;
+            max-width: 700px;
+            background-color: #fff;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            padding: 40px 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 60px auto;
+            font-size: 16px;
+        }
+
+        #order h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #ff7f50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .vvod {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 14px;
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+
+        .vvod:focus {
+            border-color: #ff7f50;
+            outline: none;
+            background-color: #fff;
+        }
+
+        #send {
+            display: block;
+            width: 100%;
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #send:hover {
+            background-color: #ff5722;
+        }
+
+        #error {
+            color: #e74c3c;
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+        }
+
+        textarea.vvod {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        @media (max-width: 768px) {
+            #order {
+                padding: 30px 20px;
+            }
+        }
+    </style>
 </head>
-<body style="width: 1024px;">
-  <header class="head">
-    
-    <div class="logo">
-        <img class="logo1" src="./_BA1cYbNRCQ.jpg" alt="" height="80px" width="80px" style="border-radius: 55px">
-    <font style="padding-left: 15px;"> РасcветАй </font>
-     </div>
-   
-    <div class="ButtonsHead">
-    <div class="info">
-        <button class="aboutUs"><a href="./splav.html" style="text-decoration: none; color: white;">Главная </a></button>
-      </div>
-        <div class="Splavi">
-      <button class="Splavs"><a href="./price.html" style="text-decoration: none; color: white;">Cплавы</a></button>
-        </div>
-        <div class="Splavi">
-          <button class="Splavs">Забронировать сплав</button>
-        </div>
-        <div class="shedule">
-          <button class="raspisanie">Походы/Экскурсии</button>
-
-        </div >
+<body>
+  <div class="head">
+    <header class="head">
+  
+      <div class="logo">
+          <img class="logo1" src="./_BA1cYbNRCQ.jpg" alt="" height="80px" width="80px" style="border-radius: 55px">
+      <font style="padding-left: 15px;"> РасcветАй </font>
+      <div> 
+        <button id="burger" >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          </button>
+  </div>
+       </div>
+  
+      
      
-      </div>
-      <div class="contact">
-        <strong>
-        <ul class="spick" >
-        <li>    
-          <a href="https://vk.com/rassvetai74" style="text-decoration: none; color: black;" target="_blank">   
-            <img src="./icons8-vk-50.png" alt="" height="45px" width="45px" style="padding-top: 25px;">
-           
-       <p="vk"></p>
-      </a> 
-      </li>
-      <li>
-        <ul class="phone">
-        <img src="./icons8-телефон-30.png" alt="" >
-        +7 (982) 345-35-72
+      <div class="ButtonsHead" >
+  
+      <div class="info">
+          <button class="aboutUs"><a href="./splav.html" style="text-decoration: none; color: white;">Главная </a> </button>
+        </div>
+          <div class="Splavi">
+        <button class="Splavs"><a href="./price.html" style="text-decoration: none; color: white;">Cплавы</a></button>
+          </div>
+          <div class="Splavi">
+            <button class="Splavs" ><a href="./order.html" style="text-decoration: none; color: white;">Забронировать сплавы</a> </button>
+          </div>
+          <div class="shedule">
+            <button class="raspisanie">Походы/Экскурсии</button>
+  
+          </div >
+       
+        </div>
+        <div class="contact">
+          <strong>
         
-      </ul>
-       </li>
+          <ul class="spick" >
+          <li>    
+            <a href="https://vk.com/rassvetai74" style="text-decoration: none; color: black;" target="_blank">   
+              <img src="./icons8-vk-50.png" alt="" height="45px" width="75px" style="padding-right: 30px;">
+             
+        
+        </a> 
+        </li>
+        <li>
+          <ul class="phone">
+          <img src="./icons8-телефон-30.png" alt="" >
+          +7 (982) 345-35-72
+          
         </ul>
-      </strong>
-    </div>
-  </header>
-
-    <div id="order"><h1>Бронирование</h1>
-      <form action="" id="form">
-        <label for="name">Назовите пожалуйста ваше имя и фамилию</label>
-   <input type="text" id="name" placeholder="Введите сообщение" class="vvod">
-   <br>
-   <br>
- 
-
-  <label for="phone">Укажите ваш номер телефона для связи</label>
-   <input type="tel" id="phone" class="vvod">
-   <br>
-   <br>
+         </li>
+          </ul>
+        </strong>
+      </div>
+    </header> 
   
-
-  <label for="email"> Укажите ваш адрес электронной почты</label>
-   <input type="email" name="" id="email" class="vvod">
-   <br>
-   <br>
- 
- <label for="members">Укажите количество человек, планирующих посетить наши сплавы</label>
- <input type="number" id="members" min="1" class="vvod">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-   <br>
-   <br>
-  <label for="days">Напишите количество дней на планируете сплав</label>
-   <input type="number" id="days" min="1" max="3" class="vvod">
-  <br>
-  <br>
-
-  <label for="date">Напишите дату в которую вы хотите к нам приехать</label>
-   <input type="date" id="date" class="vvod">
-   <br>
-   <br>
+  </div> 
   
+  </div> 
+    <div id="order">
+        <h1>Бронирование</h1>
+        <form id="form">
+            <label for="name">Имя и Фамилия</label>
+            <input type="text" id="name" class="vvod" placeholder="Введите имя и фамилию">
 
-  <label for="comment">Оставьте дополнительные пожелания к сплаву</label>
-   <textarea name=""  id="comment" class="vvod"></textarea>
-   <br>
-   <br>
- 
-  </form>
-  <button id="send" type="submit">Отправить заявку</button>
-  <p id="error">Заполните форму заявки до конца!</p>
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" class="vvod" placeholder="+7 (___) ___-__-__">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="vvod" placeholder="example@mail.ru">
+
+            <label for="members">Количество человек</label>
+            <input type="number" id="members" class="vvod" placeholder="Например: 4" min="1">
+
+            <label for="days">Количество дней</label>
+            <input type="number" id="days" class="vvod" placeholder="1-3 дня" min="1" max="3">
+
+            <label for="date">Дата сплава</label>
+            <input type="date" id="date" class="vvod">
+
+            <label for="comment">Дополнительные пожелания</label>
+            <textarea id="comment" class="vvod" placeholder="Опишите пожелания или особенности"></textarea>
+
+            <button id="send" type="submit">Отправить заявку</button>
+
+            <p id="error">Пожалуйста, заполните все поля!</p>
+        </form>
     </div>
 
-    <script src="./splav.js"></script>
+    <script>
+        const form = document.getElementById("form");
+        const error = document.getElementById("error");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Предотвращаем перезагрузку страницы
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const members = document.getElementById("members").value.trim();
+            const days = document.getElementById("days").value.trim();
+            const date = document.getElementById("date").value.trim();
+            const comment = document.getElementById("comment").value.trim();
+
+            // Проверка заполнения полей
+            if (!name || !phone || !email || !members || !days || !date) {
+                error.style.display = "block";
+                return;
+            }
+
+            // Проверка email и телефона
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^\+?\d[\d\-\s]{8,}$/;
+
+            if (!emailPattern.test(email)) {
+                error.style.display = "block";
+                error.textContent = "Введите корректный email!";
+                return;
+            }
+
+            if (!phonePattern.test(phone)) {
+                error.style.display = "block";
+                error.textContent = "Введите корректный номер телефона!";
+                return;
+            }
+
+            error.style.display = "none";
+
+            // Сбор сообщения
+            const message = `
+                📌 *Новая заявка на сплав!*
+                👤 Имя: *${name}*
+                📞 Телефон: *${phone}*
+                ✉️ Email: *${email}*
+                👥 Кол-во человек: *${members}*
+                🗓 Кол-во дней: *${days}*
+                📅 Дата: *${date}*
+                💬 Пожелания: _${comment || "Нет"}_
+            `;
+
+            // Отправка в Telegram
+            const token = "7353890051:AAFOe8Sa_XOZp9ZmlQHoaBvaR7tbdV2-9OM"; // вставь свой токен сюда
+            const chat_id = "749687151"; // вставь свой chat_id сюда
+            const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+            fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    chat_id: chat_id,
+                    text: message,
+                    parse_mode: "Markdown"
+                })
+            })
+            .then(res => {
+                if (res.ok) {
+                    console.log("Заявка отправлена успешно!");
+                    alert("Заявка успешно отправлена!");
+                    form.reset();
+                } else {
+                    console.error("Ошибка при отправке:", res);
+                    alert("Ошибка при отправке. Попробуйте позже.");
+                }
+            })
+            .catch(err => {
+                console.error("Сетевая ошибка:", err);
+                alert("Сетевая ошибка. Попробуйте позже.");
+            });
+        });
+    </script>
 </body>
 </html>
