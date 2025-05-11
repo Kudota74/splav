@@ -44,7 +44,7 @@ font-weight: bold;
   grid-template-rows: repeat(5, 250px);
   margin-left: 15px;
   position: absolute;
-  top: 750px;
+  top: 500px;
   right: 0px;
   left: 0px;
   bottom: 0;
@@ -507,6 +507,7 @@ font-size: 20px;}
 
   .videosec{
     display: block;
+    width: 100%;
   }
   .video{
     display: none;
@@ -533,20 +534,20 @@ font-size: 20px;}
     display: block;   
   }
 
-  .ButtonsHead{
+  /* .ButtonsHead{
     flex-direction: column;
     align-items: flex-start;
     display: block;
     background-color: #1f1f1f;    
-    /*position: absolute;*/
+    position: absolute;
     margin-top: 30px;
     width: 0px;
     height: 900px;
     left: 0;
     z-index: 1000; 
     padding: 10px;
-    /* padding-right: 900px;     */
-  }
+    padding-right: 900px;    
+  } */
 
   .info,
 .Splavi,
@@ -563,8 +564,7 @@ font-size: 20px;}
   display: flex;
 }
 
-#burger{display: block;
-  position: absolute;}
+
  
   
   /* margin-left: auto;
@@ -608,24 +608,15 @@ font-size: 20px;}
   height: 100%;
 }
 }
-.line{
-  background-color: #8f9394;
-  width: 25px;
-  height: 20px;
-  margin: 3px 0;
-}
-/* #burger{
-  display: flex;
-  flex-direction: column;
-  /* cursor: pointer;} */
 
 
 
-.burger-checkbox {
+
+/* .burger-checkbox {
   position: absolute;
   visibility: hidden;
-}
-.burger {
+} */
+/* .burger {
   cursor: pointer;
   display: block;
   position: relative;
@@ -634,9 +625,9 @@ font-size: 20px;}
   width: 40px;
   height: 26px;
   margin: 30px auto;
-}
+} */
 
-.burger::before,
+/* .burger::before,
 .burger::after {
   content: '';
   left: 0;
@@ -662,7 +653,7 @@ font-size: 20px;}
   transform: rotate(45deg);
   box-shadow: 0 6px 0 rgba(0,0,0,0);
   transition: box-shadow .15s, top .3s, transform .3s .15s;
-}
+} */
 /* .burger-checkbox:checked + .burger::after {
   bottom: 11px;
   transform: rotate(-45deg);
@@ -728,4 +719,110 @@ text-align:center; */
 border: 3px solid white;
 color: white;
 }
+
+  /* адаптация под экраны с масштабом 125% */
+    
+  .video{
+    width: 70%;
+    height: 100%;
+   
+  }
+  .pic1ai{
+    height: 580px;
+  }
+  .text{
+    font-size: 25px;
+  }
+  .ButtonsHead{
+    padding-left: 300px;
+  }
+  .spick{
+    padding-left: 30px;
+  }
+
+  .headline{
+    width: 70%;
+    justify-content: center;
+
+  }
+
+
+  
+
+
+/* стиль бургер меню */
+  /* Скрываем чекбокс */
+.burger-toggle {
+  display: none;
+}
+
+/* Стили кнопки бургера */
+.burger-btn {
+  display: none; /* По умолчанию скрыта (покажем только на мобильных) */
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  z-index: 1000;
+}
+
+/* Полоски бургера */
+.burger-btn .line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #8f9394;
+  transition: all 0.3s ease;
+}
+
+/* Анимация бургера при открытии */
+.burger-toggle:checked + .burger-btn .line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burger-toggle:checked + .burger-btn .line:nth-child(2) {
+  opacity: 0;
+}
+.burger-toggle:checked + .burger-btn .line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Мобильное меню (показываем при нажатии) */
+@media (max-width: 768px) {
+  .burger-btn {
+    display: block; /* Показываем кнопку */
+  }
+  
+  .ButtonsHead {
+    display: none; /* Скрываем меню */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+  }
+  
+  /* Показываем меню при клике */
+  .burger-toggle:checked ~ .ButtonsHead {
+    display: flex;
+  }
+  
+  /* Адаптация контактов */
+  .contact {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white !important;
+  }
+}
+
 
